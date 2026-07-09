@@ -7,3 +7,5 @@ Assignment 2 - design 1 : https://akshadgiri.github.io/cohort3.0-Assignments/Ass
 Assignment 2 - design 2 : https://akshadgiri.github.io/cohort3.0-Assignments/Assignment2/Assignment2_design2/
 
 Assignment 2 - design 3 : https://akshadgiri.github.io/cohort3.0-Assignments/Assignment2/Assignment2_design2/
+
+Assignment 3 - design 1 : https://akshadgiri.github.io/cohort3.0-Assignments/Assignment3/Assignment3_design1/index.html
