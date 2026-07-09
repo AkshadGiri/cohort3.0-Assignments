@@ -1,0 +1,312 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+
+    background:
+    radial-gradient(circle at bottom left,#7d1238 0%,transparent 40%),
+    radial-gradient(circle at top right,#4c148a 0%,transparent 40%),
+    #1d0b18;
+
+    color: white;
+
+    min-height: 100vh;
+
+    position: relative;   /* Add this */
+
+    overflow-x: hidden;   /* Prevent horizontal scrolling */
+}
+
+/* Navbar */
+
+nav {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 0;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin: 0 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #ff4fa1;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.menu {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* instead of center */
+      margin-top:20px;
+
+}
+
+.left {
+  width: 45%;
+  padding-left: 110px;
+  padding-top: 40px;
+}
+
+.title {
+  width: 420px;
+  margin-bottom: 25px;
+}
+
+.left p {
+  color: #d6d6d6;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.buttons {
+  margin-top: 40px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.play-btn {
+  background: #ff7b00;
+  color: white;
+
+  border: none;
+
+  padding: 15px 35px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.trailer-btn {
+  background: transparent;
+
+  color: white;
+
+  border: 2px solid #ff3d8d;
+
+  padding: 15px 35px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+   overflow:hidden;
+
+}
+
+.right img {
+  width: 420px;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  transform:translateX(40px);
+
+}
+
+.scroll-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.scroll-text p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.line {
+  width: 2px;
+  height: 70px;
+  background: #ff4d94;
+  margin-top: 15px;
+}
+
+.social-icons {
+  position: absolute;
+
+  right: 110px;
+
+  top: 45%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #ff4d94;
+
+  font-size: 20px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+   font-size:24px;
+}
+
+/* Bottom Video Section */
+
+.videos {
+  width: 90%;
+  margin: 50px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 20px;
+
+  border-radius: 20px;
+}
+
+.video-card {
+  width: 32%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.video-card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 15px;
+}
+
+.play-icon {
+  position: absolute;
+
+  bottom: 15px;
+  right: 15px;
+
+  width: 50px;
+  height: 50px;
+
+  background: white;
+  color: black;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.play-icon i{
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.bg-game{
+    position: absolute;
+    left: 60px;
+    bottom: 180px;
+
+    font-size: 170px;
+    font-weight: bold;
+
+    color: rgba(255,255,255,0.04);
+
+    z-index: -1;
+}
+
+.bg-squid{
+    position: absolute;
+    right: -120px;
+    top: 160px;
+
+    font-size: 170px;
+    font-weight: bold;
+
+    color: rgba(255,255,255,0.04);
+
+    transform: rotate(90deg);
+
+    z-index: -1;
+}
+.bg-text{
+
+    position: absolute;
+
+    left: 40px;
+    bottom: 140px;
+
+    font-size: 180px;
+    font-weight: 700;
+
+    color: rgba(255,255,255,0.03);
+
+    letter-spacing: 5px;
+
+    z-index: -1;
+
+    user-select: none;
+}
